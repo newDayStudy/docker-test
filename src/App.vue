@@ -9,7 +9,7 @@ import HelloWorld from './components/HelloWorld.vue'
     121321321
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
+      自动化测试
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
