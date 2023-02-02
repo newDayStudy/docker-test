@@ -20,7 +20,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}  #docker的用户名
           password: ${{ secrets.DOCKER_PASSWORD }}	#docker的密码
-
+      - name: build in new image
+        run: |
+          docker rmi 429382356/docker-test
+          docker build -t 429382356/docker-test
       - name: Extract metadata (tags, labels) for Docker # 获取元数据包括tag和labels
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
