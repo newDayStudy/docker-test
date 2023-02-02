@@ -6,10 +6,9 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-    121321321
+    <p>自动化测试</p>
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      自动化测试
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
